@@ -1,0 +1,20 @@
+@font-face {
+  font-family: cafe;
+  src: url("../font/Cafe\ Francoise_D.otf") format("opentype");
+}
+.feed {
+  padding: 60px 75px;
+  display: flex;
+  flex-direction: column;
+}
+.feed_top {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  position: absolute;
+  font-size: 3rem;
+  font-family: cafe;
+  top: 80px;
+  left: 40%;
+}

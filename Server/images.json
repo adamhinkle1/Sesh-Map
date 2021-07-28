@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "607a173c84a4cf3a008c9696"
+  },
+  "nameOfImg": "Some Image",
+  "category": "Surfing",
+  "parent_id": "60443a6fe3734107106a8060",
+  "url": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2019-2/11414-Surfing_and_Anxiety_1296x728-header.jpg?w=1155&h=1528",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607a176f84a4cf3a008c9697"
+  },
+  "nameOfImg": "Some Image1",
+  "category": "Surfing1",
+  "parent_id": "60443a6fe3734107106a8060",
+  "url": "https://gtimg.tokyo2020.org/image/private/f_auto,t_article-lead-image-desktop/production/c7yv2agank5bt6osfe7o",
+  "__v": 0
+}]

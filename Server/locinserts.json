@@ -1,0 +1,254 @@
+[{
+  "_id": {
+    "$oid": "60443a6fe3734107106a805c"
+  },
+  "category": "Surfing",
+  "name": "Kapowui Surf Lessons",
+  "url": "https://www.yelp.com/biz/kapowui-surf-lessons-santa-monica?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 33.9993762,
+    "longitude": -118.4836591
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a805d"
+  },
+  "category": "Surfing",
+  "name": "Go Surf LA",
+  "url": "https://www.yelp.com/biz/go-surf-la-santa-monica-2?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 34.004686,
+    "longitude": -118.490685
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a805e"
+  },
+  "category": "Surfing",
+  "name": "Learn2Rip Surfing Lesson and Ocean Academy",
+  "url": "https://www.yelp.com/biz/learn2rip-surfing-lesson-and-ocean-academy-huntington-beach-3?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 33.7249391985603,
+    "longitude": -118.080081380904
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a805f"
+  },
+  "category": "Surfing",
+  "name": "Malibu Surf Coach",
+  "url": "https://www.yelp.com/biz/malibu-surf-coach-malibu?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 34.005873,
+    "longitude": -118.803438
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a8060"
+  },
+  "category": "Surfing",
+  "name": "One Wave Surf School",
+  "url": "https://www.yelp.com/biz/one-wave-surf-school-manhattan-beach-6?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 33.9047379337451,
+    "longitude": -118.422053813492
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a8061"
+  },
+  "category": "Surfing",
+  "name": "Aloha Brothers Surf Lessons",
+  "url": "https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 33.99308,
+    "longitude": -118.47148
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a8062"
+  },
+  "category": "Surfing",
+  "name": "Rider Shack Surf & Skate Shop",
+  "url": "https://www.yelp.com/biz/rider-shack-surf-and-skate-shop-los-angeles?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 33.993651,
+    "longitude": -118.441852
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a8063"
+  },
+  "category": "Surfing",
+  "name": "Surf Coach LA",
+  "url": "https://www.yelp.com/biz/surf-coach-la-los-angeles?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 34.04675,
+    "longitude": -118.53117
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a8064"
+  },
+  "category": "Surfing",
+  "name": "Trestles Beach",
+  "url": "https://www.californiabeaches.com/beach/trestles-beach/",
+  "coordinates": {
+    "latitude": 33.4771908,
+    "longitude": -117.7366786
+  }
+},{
+  "_id": {
+    "$oid": "60443a6fe3734107106a8065"
+  },
+  "category": "Surfing",
+  "name": "Salt Creek Beach",
+  "url": "https://www.surfline.com/surf-report/salt-creek/5842041f4e65fad6a770882e?camId=58349fe73421b20545c4b57e",
+  "coordinates": {
+    "latitude": 33.4771908,
+    "longitude": -117.7366786
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a8066"
+  },
+  "category": "Skateboarding",
+  "name": "LA Skate Co",
+  "url": "https://www.yelp.com/biz/la-skate-co-hollywood?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 34.0907753,
+    "longitude": -118.3070047
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a8067"
+  },
+  "category": "Skateboarding",
+  "name": "South Bay Skates",
+  "url": "https://www.yelp.com/biz/south-bay-skates-torrance-3?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 33.8801511,
+    "longitude": -118.3349662
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a8068"
+  },
+  "category": "Skateboarding",
+  "name": "Non Factory",
+  "url": "https://www.yelp.com/biz/non-factory-los-angeles?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 34.0500290863452,
+    "longitude": -118.24096408699
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a8069"
+  },
+  "category": "Skateboarding",
+  "name": "Centennial Skatepark",
+  "url": "https://www.vans.com/skateparks-orange.html",
+  "coordinates": {
+    "latitude": 33.7475055,
+    "longitude": -117.9898616
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a806a"
+  },
+  "category": "Skateboarding",
+  "name": "Rip City Skates",
+  "url": "https://www.yelp.com/biz/rip-city-skates-santa-monica-2?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 34.034808,
+    "longitude": -118.473197
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a806b"
+  },
+  "category": "Surfing",
+  "name": "Unified Skate Co.",
+  "url": "https://www.yelp.com/biz/unified-skate-co-los-angeles-3?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 34.231722,
+    "longitude": -118.597979
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a806c"
+  },
+  "category": "Skateboarding",
+  "name": "Maintain",
+  "url": "https://www.yelp.com/biz/maintain-los-angeles-4?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 34.0841123,
+    "longitude": -118.2220999
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a806d"
+  },
+  "category": "Skateboarding",
+  "name": "Venice Skateboarding Stuff",
+  "url": "https://www.yelp.com/biz/venice-skateboarding-stuff-venice-4?adjust_creative=53y94bHggI-v5nm8CUV_Ug&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=53y94bHggI-v5nm8CUV_Ug",
+  "coordinates": {
+    "latitude": 33.990601,
+    "longitude": -118.476601
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a806e"
+  },
+  "category": "Skateboarding",
+  "name": "San Clemente Skatepark",
+  "url": "https://www.yelp.com/biz/san-clemente-skate-park-ralphs-skate-court-san-clemente",
+  "coordinates": {
+    "latitude": 33.4453279,
+    "longitude": -117.5868273
+  }
+},{
+  "_id": {
+    "$oid": "60443b17e3734107106a806f"
+  },
+  "category": "Skateboarding",
+  "name": "Laguna Niguel Skatepark",
+  "url": "https://www.yelp.com/biz/laguna-niguel-skate-and-soccer-park-laguna-niguel",
+  "coordinates": {
+    "latitude": 33.5604043,
+    "longitude": -117.7191512
+  }
+},{
+  "_id": {
+    "$oid": "6052957ba0c68f3e0090e2b1"
+  },
+  "category": "Climbing",
+  "name": "Central Coast Climbing",
+  "url": "https://www.mountainproject.com/area/105796934/central-coast",
+  "coordinates": {
+    "latitude": 35.273,
+    "longitude": -120.668
+  }
+},{
+  "_id": {
+    "$oid": "605295f8a0c68f3e0090e2b2"
+  },
+  "category": "Climbing",
+  "name": "Western Sierra Climbing",
+  "url": "https://www.mountainproject.com/area/107098288/western-sierra",
+  "coordinates": {
+    "latitude": 35.967,
+    "longitude": -118.484
+  }
+},{
+  "_id": {
+    "$oid": "605299c0a0c68f3e0090e2b3"
+  },
+  "category": "Hiking",
+  "name": "Laguna Beach Cliff Hike",
+  "url": "https://www.alltrails.com/us/california/laguna-beach",
+  "coordinates": {
+    "latitude": 33.506043,
+    "longitude": -117.7449387
+  }
+}]

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: cafe;
+  src: url("../font/Cafe\ Francoise_D.otf") format("opentype");
+}
+.sideBar {
+  background: whitesmoke;
+  box-shadow: 5px 5px 7px -6px rgba(0, 0, 0, 0.75);
+  width: 17vw;
+  padding: 50px 1vw;
+  min-height: 100vh;
+}
+.filter {
+  justify-content: center;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+.filter > h3 {
+  font-size: 2rem;
+  font-family: cafe;
+  color: grey;
+}
+.icon {
+  font-size: 3rem;
+  color: grey;
+}
+.sideBar_thread {
+  padding-top: 10px;
+  width: 15vw;
+  justify-content: left;
+  color: grey;
+}
