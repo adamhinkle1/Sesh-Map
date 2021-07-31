@@ -29,17 +29,16 @@ const Map = () => {
   const [ isEditable, setEditable] = useState(false);
   const [ addLocation, setAddLocation ] = useState(null)
   const [locCategory, setLocCategory] = useContext(LocContext);
-  
+  const [img, setImg] = useState(null)
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
   };
 
-const handleCloseDialog = () => {
-    setOpen(false);
-};
-
+  const handleCloseDialog = () => {
+      setOpen(false);
+  };
 
   const { isLoaded } = useJsApiLoader({
     id: '6fb736b44b1a2c01',
@@ -63,6 +62,19 @@ const handleCloseDialog = () => {
   useEffect(() => {
     if(locCategory){
     getCategories(locCategory)
+    if (locCategory === 'Surfing'){
+      setImg(process.env.PUBLIC_URL + '/surfing.jpg')
+    }
+    if (locCategory === 'Skateboarding'){
+      setImg(process.env.PUBLIC_URL + '/skateboarding.jpg')
+    }
+    if (locCategory === 'Hiking'){
+      setImg(process.env.PUBLIC_URL + '/hiking.jpg')
+    }
+    if (locCategory === 'Rock Climbing'){
+      setImg(process.env.PUBLIC_URL + '/rock climbing.jpg')
+    }
+    
     }
     else {
       setShowLocations([])
@@ -119,7 +131,7 @@ const handleCloseDialog = () => {
               setClicked(location)
             }}
             icon={{
-              url: process.env.PUBLIC_URL + '/' + location.category + '.jpg',
+              url: img,
               origin: new window.google.maps.Point(0, 0),
               anchor: new window.google.maps.Point(15, 15),
               scaledSize: new window.google.maps.Size(45, 45),
