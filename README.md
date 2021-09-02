@@ -15,4 +15,4 @@ Sesh Map is a Mongodb Express React.js Node.js web application. Fundamentally, i
 Check out a live deployment with heroku: https://mysterious-sands-91906.herokuapp.com/
 
 ## Our code:
-Our code is completely open source and free for anyone to use or modify. If you wish to develop on this codebase:
+Our code is completely open source and free for anyone to use or modify.
