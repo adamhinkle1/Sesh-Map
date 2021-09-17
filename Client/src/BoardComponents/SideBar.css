@@ -5,12 +5,22 @@
 .sideBar {
   background: whitesmoke;
   box-shadow: 5px 5px 7px -6px rgba(0, 0, 0, 0.75);
-  width: 17vw;
+  width: 23ch;
   padding: 50px 1vw;
-  min-height: 100vh;
+  z-index: 1;
+  min-height: 90vh;
+}
+.sideBar_collapse {
+  background: whitesmoke;
+  box-shadow: 5px 5px 7px -6px rgba(0, 0, 0, 0.75);
+  width: 20ch;
+  min-height: 90vh;
+  padding: 50px 1vw;
+  z-index: 1;
 }
 .filter {
   justify-content: center;
+  align-items: center;
   display: flex;
   border-bottom: 1px solid gray;
 }
@@ -19,13 +29,60 @@
   font-family: cafe;
   color: grey;
 }
+.filter_collapse {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+.filter_collapse > h3 {
+  font-size: 2rem;
+  font-family: cafe;
+  color: grey;
+}
 .icon {
+  font-size: 3rem;
+  color: grey;
+}
+.icon_collapse {
   font-size: 3rem;
   color: grey;
 }
 .sideBar_thread {
   padding-top: 10px;
-  width: 15vw;
-  justify-content: left;
-  color: grey;
+  width: 100%;
+}
+.sideBar_thread_collapse {
+  padding-top: 10px;
+  width: 100%;
+}
+.sideBar_tread_container {
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .sideBar_collapse {
+    position: fixed;
+    background: none;
+    box-shadow: none;
+    margin-top: -7.5rem;
+    margin-left: -2rem;
+    z-index: 500;
+  }
+  .icon_collapse {
+    position: absolute;
+    top: 0.47em;
+    left: 0.6em;
+    color: white;
+    font-size: 5rem;
+  }
+  .filter_collapse {
+    border: none;
+  }
+  .filter_collapse > h3 {
+    display: none;
+  }
+  .sideBar_thread_collapse {
+    display: none;
+  }
 }

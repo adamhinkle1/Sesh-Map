@@ -1,0 +1,80 @@
+.place-to-visit {
+  display: block;
+}
+
+.places_section1 {
+  padding: 3rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  /* background: rgb(65, 121, 121); */
+  background: white;
+  gap: 5em;
+}
+.places_section1_images {
+  grid-column: 1/2;
+  grid-row: 1;
+  align-self: center;
+}
+.places_section1_text {
+  grid-column: 2/3;
+  grid-row: 1;
+  height: 100%;
+}
+
+.places_section2_text > h1,
+.places_section1_text > h1 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 600;
+  font-family: Nunito;
+  line-height: 1;
+}
+
+.places_section1_text > h1 {
+  color: rgb(21, 123, 141);
+}
+.places_section2_text > h1 {
+  color: white;
+}
+
+.places_section2_text > p,
+.places_section1_text > p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: Nunito;
+  line-height: 1.4;
+}
+.places_section1_text > p {
+  color: rgb(70, 70, 70);
+}
+.places_section2_text > p {
+  color: rgb(200, 200, 200);
+}
+
+.places_section2 {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: rgb(21, 123, 141);
+  gap: 5em;
+}
+.places_section2_images {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.places_section2_text {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+@media (max-width: 650px) {
+  .places_section2,
+  .places_section1 {
+    display: block;
+  }
+}

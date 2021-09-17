@@ -1,4 +1,5 @@
 .board_body {
   display: flex;
   background: white;
+  justify-content: left;
 }

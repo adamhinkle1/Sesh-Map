@@ -1,5 +1,4 @@
 import React from 'react'
-import './Thread.css'
 import {ThreadStateValue} from '../Context/ThreadProvider'
 import {actionTypes} from '../Context/reducer'
 import {Button} from '@material-ui/core'
@@ -7,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     buttons: {
       paddingTop: '10px',
-      width: '15vw',
+      width: '100%',
       justifyContent: 'left',
       color: 'grey',
     }

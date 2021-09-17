@@ -8,7 +8,6 @@ import Discover from "./Discover";
 import Contact from "./Contact";
 import Login from "./Context/Login";
 import Logout from "./Context/Logout";
-import Events from "./Events";
 import Location from './MapComponents/location';
 import "./About.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -24,7 +23,7 @@ function Server() {
           <Home />
         </Route>
         <Route path="/board" exact>
-          <Header />
+          <Header/>
           <Board />
         </Route>
         <Route path="/discover" exact>

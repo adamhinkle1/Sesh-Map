@@ -1,17 +1,15 @@
 import React from 'react'
 import './Header.css'
-import Navbar from './ServerNavbar'
+import Navbar from './Navbar'
 
 function Header() {
-
-    
     return (
+    <>
         <div className='header'>
-            <div className="header_right">
-                <Navbar color="black"/>
-            </div>
+                <Navbar className="header_menu" color="white"/>
         </div>
-
+        <div className='header-spacing'></div>
+    </>
     )
 }
 

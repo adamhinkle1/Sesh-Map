@@ -18,7 +18,7 @@ function Discover() {
                     {user? (
                     <>
                         <Header />
-                        <div className="body">
+                        <div className="map_body">
                             <div>
                                 <Container />
                             </div>

@@ -2,8 +2,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-#page-wrap {
-  padding-bottom: 10px;
-  padding-top: 10px;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

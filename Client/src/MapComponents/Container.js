@@ -3,13 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import {Button} from '@material-ui/core'
 import SearchBar from './SearchBar'
 import { CssBaseline } from "@material-ui/core";
-import Slide from '@material-ui/core/Slide';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import TextField from '@material-ui/core/TextField';
 import {LocContext} from '../MapComponents/locContext';
 
 
@@ -18,36 +11,26 @@ const useStyles = makeStyles((theme) => ({
     position:'relative',
     padding: '50px 1vw',
     background: 'whitesmoke',
-    height: '90vh',
-    width: '17vw',
+    height: '87vh',
+    width: '23ch',
+  },
+  search: {
+    width: '100%',
   },
   divider:{
+    width: '100%',
     padding:'10px',
   },
   buttons: {
     paddingTop: '10px',
-    width: '15vw',
+    width: '20ch',
     justifyContent: 'left',
     color: 'grey',
   }
 
 }));
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
-
-export default function ClippedDrawer() {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-const handleCloseDialog = () => {
-    setOpen(false);
-};
-
+export default function Container() {
   const classes = useStyles();
   const [locCategory, setLocCategory] = useContext(LocContext);
 

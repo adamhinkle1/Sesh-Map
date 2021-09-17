@@ -1,19 +1,17 @@
 import React, { useState, useEffect, useCallback, useContext } from 'react';
-import { GoogleMap, useJsApiLoader, Marker, InfoWindow, useGoogleMap } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
 import {listLocations, getCategory} from "./api"
 import { Link } from  'react-router-dom';
 import {LocContext} from './locContext';
 import { CoordinatesStateValue } from '../Context/CoordinatesProvider';
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng
-} from "react-places-autocomplete";
 import Slide from '@material-ui/core/Slide';
-import NewLocation from './NewLocation'
+import NewLocation from './NewLocation';
+
+
 
 const containerStyle = {
-  width: '83vw',
-  height: '90vh'
+  width: 'calc(100vw - 23ch)',
+  height: '87vh'
 };
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -29,8 +27,10 @@ const Map = () => {
   const [ isEditable, setEditable] = useState(false);
   const [ addLocation, setAddLocation ] = useState(null)
   const [locCategory, setLocCategory] = useContext(LocContext);
-  const [img, setImg] = useState(null)
+  const [img, setImg] = useState(null);
   const [open, setOpen] = React.useState(false);
+
+
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -61,30 +61,25 @@ const Map = () => {
 
   useEffect(() => {
     if(locCategory){
-    getCategories(locCategory)
-    if (locCategory === 'Surfing'){
-      setImg(process.env.PUBLIC_URL + '/surfing.jpg')
-    }
-    if (locCategory === 'Skateboarding'){
-      setImg(process.env.PUBLIC_URL + '/skateboarding.jpg')
-    }
-    if (locCategory === 'Hiking'){
-      setImg(process.env.PUBLIC_URL + '/hiking.jpg')
-    }
-    if (locCategory === 'Rock Climbing'){
-      setImg(process.env.PUBLIC_URL + '/rock climbing.jpg')
-    }
-    
+      getCategories(locCategory)
+      if (locCategory === 'Surfing'){
+        setImg(process.env.PUBLIC_URL + '/surfing.jpg')
+      }
+      if (locCategory === 'Skateboarding'){
+        setImg(process.env.PUBLIC_URL + '/skateboarding.jpg')
+      }
+      if (locCategory === 'Hiking'){
+        setImg(process.env.PUBLIC_URL + '/hiking.jpg')
+      }
+      if (locCategory === 'Rock Climbing'){
+        setImg(process.env.PUBLIC_URL + '/rock climbing.jpg')
+      }
+      
     }
     else {
       setShowLocations([])
     }
     }, [locCategory])
-
-
-  const goTo = useCallback(({ lat, lng}) => {
-    map.panTo(32.09152341542215, -99.74991113935397);
-  })
 
   
   const onClick = (e) => {
@@ -93,7 +88,6 @@ const Map = () => {
       if (e){
         setMark({lat: e.latLng.lat(), lng: e.latLng.lng(), x: e.Tb.x, y: e.Tb.y})
       }
-      
     }
     setIsMarker(!isMarker)
 

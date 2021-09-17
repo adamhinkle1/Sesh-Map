@@ -1,7 +1,6 @@
 import React, { useState, useEffect }from 'react';
 import {getLocation, getReviews, getImages, addReview, uploadFile, addImages} from "./api";
-import {Button, ButtonGroup} from '@material-ui/core';
-//import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
+import {Button} from '@material-ui/core';
 import './location.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
@@ -74,10 +73,7 @@ const Location = ({ match }) => {
 
     const classes = useStyles();
 
-    useEffect(() => {
-        // const timer = setTimeout(() => {
-        //     getLoc();
-        // }, 1000)      
+    useEffect(() => {  
         getLoc();
         getRevs();
         getImgs();
@@ -92,44 +88,35 @@ const Location = ({ match }) => {
     
     const handleCloseDialog = () => {
         addRev()
-        console.log(value)
         setOpen(false);
     };
 
     const handleReview = (e) => {
         setReview(e.target.value)
-
     }
-    
 
     const getLoc = async () => {
-        console.log(match)
         const seePoint = await getLocation(match.params.id);
         setSeePoint(seePoint)
-        console.log(seePoint[0]) 
     }
 
     const getRevs = async () => {
         const seeRevs = await getReviews(match.params.id);
         setSeeRevs(seeRevs)
-        console.log(seeRevs)
     }
 
     const getImgs = async () => {
         const seeImgs = await getImages(match.params.id)
         setSeeImgs(seeImgs)
-        console.log(seeImgs)
     }
 
     const addRev = async() => {
-        console.log(reviewState)
-        const setRev = await addReview(reviewState)
+        await addReview(reviewState)
         alert("Thank you for your review!")
         //console.log(reviewState)
     }
 
     const uploadPhoto = async() => {
-        console.log(selectFile);
         const result = await uploadFile(selectFile);
         setUploadImg(result.data.public_id);
         

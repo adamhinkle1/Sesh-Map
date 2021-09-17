@@ -10,7 +10,6 @@ import {actionTypes} from '../Context/reducer'
 const useStyles = makeStyles((theme) => ({
   search: {
     borderBottom: 'solid 1px grey',
-    width:'15vw',
   },
   searchinput:{
     display:'flex'

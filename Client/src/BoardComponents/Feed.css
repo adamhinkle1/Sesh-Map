@@ -3,18 +3,30 @@
   src: url("../font/Cafe\ Francoise_D.otf") format("opentype");
 }
 .feed {
-  padding: 60px 75px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2em;
+  height: 87vh;
+  overflow: hidden;
 }
-.feed_top {
-  background-repeat: no-repeat;
-  background-size: cover;
+.feed_title_container {
+  margin-top: 2em;
 }
-.title {
-  position: absolute;
+.feed_title_text {
   font-size: 3rem;
   font-family: cafe;
-  top: 80px;
-  left: 40%;
+  font-weight: 900;
+}
+.feed_posts {
+  width: 80%;
+  padding: 1em;
+  height: auto;
+  overflow-y: auto;
+}
+@media (max-width: 550px) {
+  .feed_posts {
+    width: 90%;
+  }
 }

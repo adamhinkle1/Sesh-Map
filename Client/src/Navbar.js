@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { LoggedInOptions, LoggedOutOptions } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
-import {useStateValue} from '../Context/StateProvider'
+import {useStateValue} from './Context/StateProvider'
 
-function Navbar({color}) {
+function Navbar(props) {
 
   const [sidebar, setSidebar] = useState(false);
 
@@ -22,36 +22,37 @@ function Navbar({color}) {
   }
 
   return (
-    <>
-      <IconContext.Provider value={{ color: 'black' }}>
-        <div className='navbar'>
+    <div className="nav_container">
+      <IconContext.Provider className="closed-menu" value={{ color: `${props.color}` }}>
+        <div className='home-navbar'>
           <Link to='#' className={sidebar ? 'menu-bars active' : 'menu-bars'}>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
         </div>
-        </IconContext.Provider>
-        <IconContext.Provider value={{color:'white'}}>
+      </IconContext.Provider>
+      <IconContext.Provider className="open-menu" value={{color:'white'}}>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className='nav-menu-items' onClick={showSidebar}>
-            <li className='navbar-toggle'>
+          <div className='nav-menu-items' onClick={showSidebar}>
+            <div className='navbar-toggle'>
               <Link to='#' className={sidebar ? 'menu-x active' : 'menu-x'}>
                 <AiIcons.AiOutlineClose />
               </Link>
-            </li>
+            </div>
             {sidebarData.map((item, index) => {
               return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
+                <div key={index} className="nav-text">
+                  <Link className="nav-text_icon" to={item.path}>
                     {item.icon}
-                    <span>{item.title}</span>
+                    &nbsp;
+                    <p className="nav-text_text">{item.title}</p>
                   </Link>
-                </li>
+                </div>
               );
             })}
-          </ul>
+          </div>
         </nav>
       </IconContext.Provider>
-    </>
+    </div>
   );
 }
 

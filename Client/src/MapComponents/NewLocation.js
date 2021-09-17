@@ -20,17 +20,15 @@ function NewLocation(props) {
     }
 
     const addLoc = async() => {
-        const setLoc = await addLocation(locationState)
+        await addLocation(locationState)
         //return props.onclose
-
     }
 
     useEffect(() => {
-
         return(
-        props.onClose
+            props.onClose
         )
-    }, [isOpen])
+    }, [isOpen, props.onClose])
 
     const onSubmit = (() => {
         addLoc()
@@ -41,6 +39,7 @@ function NewLocation(props) {
     return (
         <div>
             <Dialog
+            style={{padding:'10px'}}
             open={props.open}
             TransitionComponent={props.TransitionComponent}
             onClose={props.onClose}

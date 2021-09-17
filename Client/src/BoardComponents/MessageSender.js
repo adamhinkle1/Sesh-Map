@@ -1,13 +1,10 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState} from 'react'
 import './MessageSender.css'
 import db from './firebase'
 import firebase from 'firebase'
 import { Avatar } from '@material-ui/core'
 import { useStateValue } from '../Context/StateProvider'
-import IconButton from '@material-ui/core/IconButton';
 import {ThreadStateValue} from '../Context/ThreadProvider'
-import  {actionTypes} from '../Context/reducer'
-
 function MessageSender() {
     const [{thread}, dispatcher] = ThreadStateValue()
     const t = {thread}
@@ -32,7 +29,6 @@ function MessageSender() {
             <div className="messageSender_top">
                 <Avatar  src={user ? user.photoURL : ""} />
                 <form>
-                    
                     <input className='messageSender_input' 
                     placeholder={`Comment`}
                     value={input}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect } from "react";
 import "./App.css";
 import { ThreadProvider } from "./Context/ThreadProvider";
 import reducer, { initState, actionTypes } from "./Context/reducer";
@@ -18,7 +18,7 @@ function App() {
         user: usr.user,
       });
     }
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     localStorage.setItem("userData", JSON.stringify({ user }));
